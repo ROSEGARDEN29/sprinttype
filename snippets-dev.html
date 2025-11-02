@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprintType - Developer Snippets Pack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #FF3B30 0%, #FF6B4A 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .logo-text {
+            font-size: 48px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+        }
+        
+        .logo-text .sprint {
+            color: #fff;
+        }
+        
+        .logo-text .type {
+            color: #FFD60A;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            color: rgba(255,255,255,0.9);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        
+        .intro {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .intro h2 {
+            color: #FFD60A;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+        
+        .intro p {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        
+        .snippet-section {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 2px solid rgba(255,255,255,0.15);
+        }
+        
+        .snippet-section h3 {
+            color: #FFD60A;
+            margin-bottom: 20px;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .snippet {
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #FFD60A;
+        }
+        
+        .snippet-trigger {
+            color: #FFD60A;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 8px;
+        }
+        
+        .snippet-expansion {
+            color: rgba(255,255,255,0.95);
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .snippet-note {
+            color: rgba(255,255,255,0.6);
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 8px;
+        }
+        
+        .download-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 40px;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #FFD60A;
+            color: #FF3B30;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
+        
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-text">
+                <span class="sprint">SPRINT</span><span class="type">TYPE</span>
+            </div>
+            <div class="tagline">Type Fast • Work Smart</div>
+        </div>
+        
+        <div class="intro">
+            <h2>⚡ Developer Snippets Pack</h2>
+            <p>
+                50 essential shortcuts for developers. Save hours of typing with Git commands, terminal shortcuts, 
+                code templates, and more. Import these directly into SprintType and boost your coding productivity instantly.
+            </p>
+        </div>
+        
+        <div class="snippet-section">
+            <h3>🔧 Git Commands</h3>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//gst</div>
+                <div class="snippet-expansion">git status</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//gco</div>
+                <div class="snippet-expansion">git checkout</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//gcm</div>
+                <div class="snippet-expansion">git commit -m ""</div>
+                <div class="snippet-note">Cursor stays between quotes</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//gps</div>
+                <div class="snippet-expansion">git push origin main</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//gpl</div>
+                <div class="snippet-expansion">git pull origin main</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//gbr</div>
+                <div class="snippet-expansion">git branch</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//glog</div>
+                <div class="snippet-expansion">git log --oneline --graph --decorate</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//ginit</div>
+                <div class="snippet-expansion">git init<br>git add .<br>git commit -m "Initial commit"</div>
+            </div>
+        </div>
+        
+        <div class="snippet-section">
+            <h3>💻 Terminal Shortcuts</h3>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//cls</div>
+                <div class="snippet-expansion">clear</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//mkd</div>
+                <div class="snippet-expansion">mkdir -p</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//rmrf</div>
+                <div class="snippet-expansion">rm -rf</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//pyserv</div>
+                <div class="snippet-expansion">python -m http.server 8000</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//npmi</div>
+                <div class="snippet-expansion">npm install</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//npmdev</div>
+                <div class="snippet-expansion">npm run dev</div>
+            </div>
+        </div>
+        
+        <div class="snippet-section">
+            <h3>📝 Code Templates - JavaScript</h3>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//func</div>
+                <div class="snippet-expansion">function functionName() {<br>&nbsp;&nbsp;// code here<br>}</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//arrow</div>
+                <div class="snippet-expansion">const functionName = () => {<br>&nbsp;&nbsp;// code here<br>}</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//cl</div>
+                <div class="snippet-expansion">console.log()</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//ifer</div>
+                <div class="snippet-expansion">if (error) {<br>&nbsp;&nbsp;console.error(error);<br>&nbsp;&nbsp;return;<br>}</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//trycatch</div>
+                <div class="snippet-expansion">try {<br>&nbsp;&nbsp;// code<br>} catch (error) {<br>&nbsp;&nbsp;console.error(error);<br>}</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//asyncfunc</div>
+                <div class="snippet-expansion">async function functionName() {<br>&nbsp;&nbsp;try {<br>&nbsp;&nbsp;&nbsp;&nbsp;// code<br>&nbsp;&nbsp;} catch (error) {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.error(error);<br>&nbsp;&nbsp;}<br>}</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//fetch</div>
+                <div class="snippet-expansion">fetch('url')<br>&nbsp;&nbsp;.then(response => response.json())<br>&nbsp;&nbsp;.then(data => console.log(data))<br>&nbsp;&nbsp;.catch(error => console.error(error));</div>
+            </div>
+        </div>
+        
+        <div class="snippet-section">
+            <h3>⚛️ React Snippets</h3>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//rfc</div>
+                <div class="snippet-expansion">import React from 'react';<br><br>const ComponentName = () => {<br>&nbsp;&nbsp;return (<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;);<br>};<br><br>export default ComponentName;</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//usest</div>
+                <div class="snippet-expansion">const [state, setState] = useState();</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//useef</div>
+                <div class="snippet-expansion">useEffect(() => {<br>&nbsp;&nbsp;// effect<br>&nbsp;&nbsp;return () => {<br>&nbsp;&nbsp;&nbsp;&nbsp;// cleanup<br>&nbsp;&nbsp;};<br>}, []);</div>
+            </div>
+        </div>
+        
+        <div class="snippet-section">
+            <h3>🐍 Python Snippets</h3>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//pydef</div>
+                <div class="snippet-expansion">def function_name():<br>&nbsp;&nbsp;&nbsp;&nbsp;pass</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//pyclass</div>
+                <div class="snippet-expansion">class ClassName:<br>&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self):<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//pyif</div>
+                <div class="snippet-expansion">if __name__ == "__main__":<br>&nbsp;&nbsp;&nbsp;&nbsp;main()</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//pytry</div>
+                <div class="snippet-expansion">try:<br>&nbsp;&nbsp;&nbsp;&nbsp;# code<br>except Exception as e:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(f"Error: {e}")</div>
+            </div>
+        </div>
+        
+        <div class="snippet-section">
+            <h3>📧 Communication Templates</h3>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//bugreport</div>
+                <div class="snippet-expansion">## Bug Report<br><br>**Description:**<br>[Brief description]<br><br>**Steps to Reproduce:**<br>1. <br>2. <br>3. <br><br>**Expected Behavior:**<br>[What should happen]<br><br>**Actual Behavior:**<br>[What actually happens]<br><br>**Environment:**<br>- OS:<br>- Browser:<br>- Version:</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//prtemplate</div>
+                <div class="snippet-expansion">## Pull Request<br><br>**What does this PR do?**<br>[Description]<br><br>**Related Issue:**<br>Closes #<br><br>**Checklist:**<br>- [ ] Tests pass<br>- [ ] Documentation updated<br>- [ ] Code reviewed</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//mtgfollow</div>
+                <div class="snippet-expansion">Hi team,<br><br>Following up on our meeting today. Here are the action items:<br><br>- [ ] Task 1 - @owner<br>- [ ] Task 2 - @owner<br><br>Next meeting: [date/time]<br><br>Let me know if I missed anything!</div>
+            </div>
+        </div>
+        
+        <div class="snippet-section">
+            <h3>📋 Documentation Snippets</h3>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//readme</div>
+                <div class="snippet-expansion"># Project Name<br><br>## Description<br>[What this project does]<br><br>## Installation<br>```bash<br>npm install<br>```<br><br>## Usage<br>[How to use]<br><br>## Contributing<br>[How to contribute]<br><br>## License<br>MIT</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//todo</div>
+                <div class="snippet-expansion">// TODO: [description]<br>// Priority: [High/Medium/Low]<br>// Assigned: [name]<br>// Due: [date]</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//fixme</div>
+                <div class="snippet-expansion">// FIXME: [what's broken]<br>// Impact: [severity]<br>// Temp solution: [workaround]</div>
+            </div>
+        </div>
+        
+        <div class="snippet-section">
+            <h3>🔐 Security & Debugging</h3>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//envtemp</div>
+                <div class="snippet-expansion"># Environment Variables<br>NODE_ENV=development<br>PORT=3000<br>DATABASE_URL=<br>API_KEY=</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//gitignore</div>
+                <div class="snippet-expansion">node_modules/<br>.env<br>.DS_Store<br>dist/<br>build/<br>*.log</div>
+            </div>
+            
+            <div class="snippet">
+                <div class="snippet-trigger">//debug</div>
+                <div class="snippet-expansion">console.log('🔍 DEBUG:', {<br>&nbsp;&nbsp;timestamp: new Date().toISOString(),<br>&nbsp;&nbsp;data: <br>});</div>
+            </div>
+        </div>
+        
+        <div class="download-section">
+            <h2 style="color: #FFD60A; margin-bottom: 20px;">Ready to 10x Your Coding Speed?</h2>
+            <p style="margin-bottom: 30px; font-size: 16px;">Download SprintType and import these snippets instantly</p>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/sprinttype/" class="download-btn">
+                Get SprintType Free
+            </a>
+            <p style="margin-top: 20px; font-size: 14px; color: rgba(255,255,255,0.7);">
+                ✓ Unlimited snippets &nbsp;•&nbsp; ✓ 10 languages &nbsp;•&nbsp; ✓ Import/Export &nbsp;•&nbsp; ✓ 100% Free
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>Made with ⚡ by the SprintType community</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/yourusername/sprinttype-snippets" style="color: #FFD60A; text-decoration: none;">
+                    Contribute on GitHub
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
