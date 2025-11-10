@@ -224,27 +224,38 @@
 		.bg-animation::after {
 		content: 'SPRINTTYPE';
 		position: absolute;
-		font-size: 120px;
+		font-size: 220px;
 		font-weight: 900;
 		color: white;
-		letter-spacing: 8px;
-		animation: float 12s ease-in-out infinite;
+		letter-spacing: 12px;
+		white-space: nowrap;
 	}
     .bg-animation::before {
-		top: 20%;
-		left: -5%;
-		animation-delay: 0s;
+		top: 15%;
+		animation: slideLeftToRight 15s linear infinite;
 	}
 
 	.bg-animation::after {
-		bottom: 20%;
-		right: -5%;
-		animation-delay: 10s;
+		bottom: 15%;
+		animation: slideRightToLeft 15s linear infinite;
 	}
 
-    @keyframes float {
-		0%, 100% { transform: translateX(-100px) rotate(-3deg); }
-		50% { transform: translateX(100px) rotate(3deg); }
+    @keyframes slideLeftToRight {
+		0% { 
+			transform: translateX(-120%) rotate(-5deg);
+		}
+		100% { 
+			transform: translateX(120vw) rotate(-5deg);
+		}
+	}
+
+	@keyframes slideRightToLeft {
+		0% { 
+			transform: translateX(120vw) rotate(5deg);
+		}
+		100% { 
+			transform: translateX(-120%) rotate(5deg);
+		}
 	}
 
     /* Main Container */
