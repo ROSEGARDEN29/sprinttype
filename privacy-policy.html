@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <title>Privacy Policy - SprintType</title>
+  <meta name="description" content="SprintType Privacy Policy - Learn how we protect your data and respect your privacy. Zero tracking, zero surveillance, 100% local storage.">
+  <meta name="robots" content="index, follow">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --red-primary: #E6373D;
+      --red-dark: #C1121F;
+      --yellow-primary: #FFD60A;
+      --yellow-dark: #FFC300;
+      --white: #FFFFFF;
+      --gray-light: #F8F9FA;
+      --gray-medium: #DEE2E6;
+      --gray-dark: #2C3E50;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+      background: linear-gradient(135deg, #E6373D 0%, #C1121F 100%);
+      color: var(--gray-dark);
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      font-weight: 900;
+      color: white;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .header p {
+      font-size: 16px;
+      color: white;
+      opacity: 0.9;
+    }
+
+    .content-card {
+      background: white;
+      border-radius: 30px;
+      padding: 50px 40px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.2);
+      margin-bottom: 40px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 30px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateX(-5px);
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, #FFF9E6 0%, #FFFEF0 100%);
+      border: 3px solid var(--yellow-primary);
+      border-radius: 20px;
+      padding: 30px;
+      margin: 30px 0;
+    }
+
+    .highlight-box h3 {
+      color: var(--red-primary);
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .info-box {
+      background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+      border: 3px solid #0EA5E9;
+      border-radius: 15px;
+      padding: 25px;
+      margin: 25px 0;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--red-primary);
+      margin: 40px 0 20px 0;
+      padding-bottom: 15px;
+      border-bottom: 4px solid var(--yellow-primary);
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--red-primary);
+      margin: 30px 0 15px 0;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    ul {
+      margin: 20px 0 20px 30px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    strong {
+      color: var(--red-primary);
+      font-weight: 700;
+    }
+
+    code {
+      background: var(--gray-light);
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      color: var(--red-dark);
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin: 15px 0;
+    }
+
+    .check-icon {
+      color: #28a745;
+      font-size: 24px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .cross-icon {
+      color: #dc3545;
+      font-size: 24px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .last-updated {
+      text-align: center;
+      color: var(--gray-dark);
+      font-size: 14px;
+      opacity: 0.7;
+      margin-top: 40px;
+      font-style: italic;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, var(--red-primary), var(--red-dark));
+      color: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .contact-box h3 {
+      color: var(--yellow-primary);
+      margin-bottom: 15px;
+    }
+
+    .contact-box a {
+      color: var(--yellow-primary);
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+
+    .contact-box a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 32px;
+      }
+
+      .content-card {
+        padding: 30px 20px;
+        border-radius: 20px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <span>←</span>
+      <span>Back to Home</span>
+    </a>
+
+    <div class="header">
+      <h1>🔒 Privacy Policy</h1>
+      <p>How SprintType protects your data and respects your privacy</p>
+    </div>
+
+    <div class="content-card">
+      
+      <div class="highlight-box">
+        <h3>🛡️ Our Privacy Commitment</h3>
+        <p><strong>SprintType is built on a foundation of privacy and transparency.</strong> Your snippets, shortcuts, and typing data never leave your device. We cannot access, view, or collect your personal information—even if we wanted to.</p>
+      </div>
+
+      <h2>📋 Summary (TL;DR)</h2>
+      
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <p><strong>All your snippets are stored locally on YOUR device</strong> using Firefox's built-in storage API</p>
+      </div>
+
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <p><strong>Zero data collection:</strong> We do not track, monitor, or collect any of your typing activity, snippets, or personal information</p>
+      </div>
+
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <p><strong>No cloud sync:</strong> Your data never touches our servers (we don't even have servers)</p>
+      </div>
+
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <p><strong>No analytics or telemetry:</strong> We don't use Google Analytics, tracking pixels, or any monitoring tools</p>
+      </div>
+
+      <div class="check-item">
+        <span class="check-icon">✓</span>
+        <p><strong>Third-party ads</strong> appear only in the extension's settings interface (popup.html and snippets.html), never while you're typing</p>
+      </div>
+
+      <h2>🔍 What Data We Access</h2>
+
+      <h3>Data Stored Locally on Your Device:</h3>
+      <ul>
+        <li><strong>Snippets:</strong> Your custom shortcuts and their expansions (e.g., <code>//email</code> → <code>john@example.com</code>)</li>
+        <li><strong>Install date:</strong> The date you installed SprintType (for internal statistics only, never sent anywhere)</li>
+        <li><strong>Total expansions counter:</strong> How many times you've used text expansion (stored locally, never transmitted)</li>
+        <li><strong>Language preference:</strong> Your selected interface language</li>
+      </ul>
+
+      <div class="info-box">
+        <p><strong>💡 Important:</strong> All this data is stored using Firefox's <code>browser.storage.local</code> API, which keeps everything on your computer. It never leaves your device unless you manually export it.</p>
+      </div>
+
+      <h3>Permissions Explained:</h3>
+      <p>SprintType requests the following Firefox permissions:</p>
+
+      <ul>
+        <li><strong><code>storage</code></strong> - Required to save your snippets locally on your device</li>
+        <li><strong><code>&lt;all_urls&gt;</code></strong> - Required so the extension can detect your shortcuts and expand them on any website (Gmail, WhatsApp, Facebook, etc.). This does NOT mean we collect data from those sites—it only allows the extension to listen for your shortcuts and replace them with your expansions.</li>
+      </ul>
+
+      <h2>🚫 What We DON'T Collect</h2>
+
+      <div class="check-item">
+        <span class="cross-icon">✗</span>
+        <p><strong>No typing activity:</strong> We don't record what you type on websites</p>
+      </div>
+
+      <div class="check-item">
+        <span class="cross-icon">✗</span>
+        <p><strong>No browsing history:</strong> We don't track which websites you visit</p>
+      </div>
+
+      <div class="check-item">
+        <span class="cross-icon">✗</span>
+        <p><strong>No personal information:</strong> No emails, names, IP addresses, or identifiers</p>
+      </div>
+
+      <div class="check-item">
+        <span class="cross-icon">✗</span>
+        <p><strong>No analytics or telemetry:</strong> We don't use Google Analytics, Mixpanel, or any tracking services</p>
+      </div>
+
+      <div class="check-item">
+        <span class="cross-icon">✗</span>
+        <p><strong>No account required:</strong> You don't need to sign up, log in, or provide any credentials</p>
+      </div>
+
+      <h2>📢 Third-Party Advertising</h2>
+
+      <p>SprintType is funded by <strong>non-intrusive advertisements</strong> that appear only in the extension's management interface (popup.html and snippets.html pages). These ads <strong>never appear while you're typing or using the core text expansion feature.</strong></p>
+
+      <h3>Our Ad Provider:</h3>
+      <ul>
+        <li><strong>Provider:</strong> A-Ads (<code>ad.a-ads.com</code>)</li>
+        <li><strong>Where ads appear:</strong> Only in the extension popup and snippet management pages</li>
+        <li><strong>What they track:</strong> The ad network may use cookies for ad targeting, but this is completely separate from your snippet data</li>
+        <li><strong>Your snippets are protected:</strong> Ad networks have zero access to your shortcuts, expansions, or typing activity</li>
+      </ul>
+
+      <div class="info-box">
+        <p><strong>🔒 Critical Privacy Guarantee:</strong> Your snippet content (shortcuts and expansions) is never sent to the ad network or any third party. Ads and snippets operate in completely isolated systems.</p>
+      </div>
+
+      <h3>Ad Cookie Disclosure:</h3>
+      <p>The advertising network may set cookies to deliver relevant ads. These cookies are standard practice for online advertising and are used solely by the ad provider—not by SprintType. You can:</p>
+      <ul>
+        <li>Block third-party cookies in your Firefox settings to prevent ad tracking</li>
+        <li>Use Firefox's Enhanced Tracking Protection (enabled by default)</li>
+        <li>The extension will continue working perfectly even with ad cookies blocked</li>
+      </ul>
+
+      <h2>🔐 Data Security</h2>
+
+      <p><strong>Since all data is stored locally on your device</strong>, your snippets are as secure as your computer. We recommend:</p>
+
+      <ul>
+        <li>Using Firefox's built-in sync if you want to back up snippets across devices (this uses Mozilla's encrypted servers, not ours)</li>
+        <li>Regularly exporting your snippets as a backup (Settings → Export)</li>
+        <li>Keeping your operating system and Firefox browser updated for maximum security</li>
+      </ul>
+
+      <div class="highlight-box">
+        <h3>⚡ Zero-Knowledge Architecture</h3>
+        <p>SprintType uses a "zero-knowledge" design: we have zero access to your data because we never receive it in the first place. Even if our website or infrastructure were compromised, your snippets would remain safe on your device.</p>
+      </div>
+
+      <h2>🌍 Data Sharing</h2>
+
+      <p><strong>We do not share, sell, rent, or transfer your data to anyone—period.</strong> Since we don't collect data, there's nothing to share.</p>
+
+      <p>The only exception is if <strong>you</strong> manually export your snippets and share them with others. You have full control over your data.</p>
+
+      <h2>👶 Children's Privacy</h2>
+
+      <p>SprintType does not knowingly collect data from anyone, including children under 13. Since we don't collect any personal information, the extension is safe for users of all ages.</p>
+
+      <h2>🔄 Changes to This Policy</h2>
+
+      <p>If we make significant changes to this Privacy Policy, we will:</p>
+      <ul>
+        <li>Update the "Last Updated" date at the bottom of this page</li>
+        <li>Notify users through the extension's update notes</li>
+        <li>Post prominent notice on our website</li>
+      </ul>
+
+      <p>We encourage you to review this policy periodically.</p>
+
+      <h2>📜 Legal Compliance</h2>
+
+      <p>SprintType complies with:</p>
+      <ul>
+        <li><strong>GDPR</strong> (General Data Protection Regulation) - EU privacy law</li>
+        <li><strong>CCPA</strong> (California Consumer Privacy Act) - California privacy law</li>
+        <li><strong>Mozilla Add-on Policies</strong> - Firefox extension guidelines</li>
+      </ul>
+
+      <p><strong>Your rights:</strong> Since we don't collect your data, there's no data to request, delete, or modify. You have complete control over your snippets through the extension interface.</p>
+
+      <h2>🛠️ Technical Details (For Developers)</h2>
+
+      <p>If you're technically inclined, here's exactly how SprintType works:</p>
+
+      <ul>
+        <li>Snippets are stored using <code>browser.storage.local</code> (Firefox's local storage API)</li>
+        <li>The content script (<code>content.js</code>) listens for input events on web pages to detect shortcuts</li>
+        <li>When a shortcut is detected, it's replaced client-side (in your browser) without any server communication</li>
+        <li>The background script (<code>background.js</code>) only handles extension initialization and local storage updates</li>
+        <li>No network requests are made except for displaying ads in the settings interface</li>
+      </ul>
+
+      <p><strong>SprintType is not open source yet</strong>, but we're considering it for full transparency. Check our <a href="https://github.com/ROSEGARDEN29/sprinttype" target="_blank" rel="noopener" style="color: var(--red-primary); font-weight: 700;">GitHub repository</a> for updates.</p>
+
+      <div class="contact-box">
+        <h3>📧 Questions or Concerns?</h3>
+        <p>If you have any questions about this Privacy Policy or how SprintType handles your data, please contact us:</p>
+        <p style="margin-top: 15px;">
+          <strong>Email:</strong> <a href="mailto:rosegarden88@proton.me">rosegarden88@proton.me</a>
+        </p>
+        <p style="margin-top: 10px; font-size: 14px; opacity: 0.9;">
+          We typically respond within 24-48 hours
+        </p>
+      </div>
+
+      <p class="last-updated">
+        <strong>Last Updated:</strong> November 10, 2025<br>
+        <strong>Effective Date:</strong> November 10, 2025
+      </p>
+
+    </div>
+  </div>
+</body>
+</html>
